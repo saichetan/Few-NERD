@@ -12,6 +12,8 @@ apex
 data/inter/
 data/intra/
 data/supervised/
+data/episode-data
+data/episode-data.zip
 *.zip
 
 
