@@ -218,7 +218,7 @@ python3 train_demo.py  --mode inter \
 python3 train_demo.py  --mode inter \
 --lr 1e-4 --batch_size 1 --trainN 10 --N 10 --K 5 --Q 1 \
 --train_iter 10000 --val_iter 500 --test_iter 5000 --val_step 1000 \
---max_length 32 --model structshot --tau 0.434
+--max_length 32 --model structshot --tau 0.434 --use_sampled_data --save_ckpt 10_5_10_A
 ```
 
 
