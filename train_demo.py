@@ -150,11 +150,11 @@ def main():
     else:
         raise NotImplementedError
 
-    if not os.path.exists('checkpoint'):
-        os.mkdir('checkpoint')
-    ckpt = 'checkpoint/{}.pth.tar'.format(prefix)
+    if not os.path.exists(opt.save_ckpt):
+        os.mkdir(opt.save_ckpt)
+#     ckpt = 'checkpoint/{}.pth.tar'.format(prefix)
     if opt.save_ckpt:
-        ckpt = opt.save_ckpt
+        ckpt = opt.save_ckpt+'/{}.pth.tar'.format(prefix)
     print('model-save-path:', ckpt)
 
     if torch.cuda.is_available():
